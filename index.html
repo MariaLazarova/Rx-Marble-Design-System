@@ -2,210 +2,403 @@
 <html lang="en">
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Marble Design System</title>
-  <link rel = "stylesheet"
-    type = "text/css"
-    href = "./assets/css/index.css" />
+    <title>Marble Design System</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="./assets/css/index.css"/>
 
-  <link rel = "stylesheet"
-    type = "text/css"
-    href = "./assets/css/flexboxgrid.css" />
+    <link rel="stylesheet"
+          type="text/css"
+          href="./assets/css/flexboxgrid.css"/>
 </head>
 <body class="page">
 
-<h1>Rx Marble Design System</h1>
+<div class="slide" id="slide1">
+    <img src="./assets/img/marble-logo.png">
 
-<h4>
-  A library and framework agnostic design system to visualize functional
-  reactive programming with <a href="https://github.com/ReactiveX"
-  title="ReactiveExtensions">ReactiveExtensions</a>
-</h4>
-<p>
-  As this is work in progress and the migration will take some time
-  we refer to the current version in form of a <a
-  href="https://github.com/BioPhoton/Rx-Marble-Design-System/raw/master/Rx-Marble-Design-System.pdf">PDF</a>.
-</p>
-
-<br>
-
-<hr>
-
-<br>
-
-<div>
-  <img
-    src="https://github.com/BioPhoton/Rx-Marble-Design-System/raw/master/assets/design-system/cover_v2.png">
 </div>
 
-<br>
+<div class="slide" id="slide2">
+    <p id="quote">
+        There's more to the picture, <br/>
+        then meets the eye. <br/> Hey hey, my my.
 
-<hr>
+    </p>
+    <div>
+        <img src="./assets/img/profile-round.png">
+        <span> Neil Young </span>
+    </div>
+</div>
 
-<br>
+<div class="slide" id="slide3">
+    <h1> The idea behind the MarbleDesignSystem </h1>
 
+    <p>
+        <b>
+            Diagrams have the unique ability to express complex things simply.
+            <br>
+            Never had reactive programming been made so visual.
+            <br>
+            Diagrams is transforming information into compelling images
+        </b>
+    </p>
 
-<h1> The idea behind the MarbleDesignSystem </h1>
+    <p>
+        Marble diagrams serve a <b>method for </b>
+        us to visualize processes over time.
+        This helps programmers and engineers to understand and design reactive
+        processes.
 
-<p>
-  <b>
-    Diagrams have the unique ability to express complex things simply.
-    <br>
-    Never had reactive programming been made so visual.
-    <br>
-    Diagrams is transforming information into compelling images
-  </b>
-</p>
+        The overall goal of the MarbleDesignSystem is to provide a unified way of
+        reading and creating stream based
+        diagrams,
+        in particular one specific type of it, the marble diagrams.
 
-<p>
-  Marble diagrams serve a <b>method for </b>
-  us to visualize processes over time.
-  This helps programmers and engineers to understand and design reactive
-  processes.
+        This guide explains all building blocks of the design system step by step and
+        in detail.
+    </p>
 
-  The overall goal of the MarbleDesignSystem is to provide a unified way of
-  reading and creating stream based
-  diagrams,
-  in particular one specific type of it, the marble diagrams.
+    <p>
+        In general we have some main rules that system follows:
+    </p>
 
-  This guide explains all building blocks of the design system step by step and
-  in detail.
-</p>
-<p>
-  In general we have some main rules that system follows:
-</p>
-<ul>
-  <li>
-    Consistent
-  </li>
-  <li>
-    Intuitive
-  </li>
-  <li>
-    Easy
-  </li>
-  <li>
-    Detailed
-  </li>
-  <li>
-    Customizable
-  </li>
-
-
-</ul>
-<h2>Consistency</h2>
-<p>
-  There are several things to follow if you try to create a standard.
-  One of them is more <b>critical for a positive outcome </b>
-  than everything else, <b>consistency</b>.
-</p>
-
-<p>
-  By working with a <b>standardized, reproducible approach </b>
-  we managed to create <b> a consistent way </b> of drawing marble diagrams.
-  <b> A set of rules </b> developed over many many iterations, adopted and
-  simplified to serve as a guideline and blueprint for <b> creating and
-  using </b>
-  these diagrams.
-</p>
-
-<h2>Intuitive</h2>
-
-<p>
-  As programming with Rx is hard we made sure to keep it intuitive.
-</p>
-
-<p>
-
-  By <b> including </b>a lot of <b>people</b> into the process of the creation
-  of this guide we collected a lot of <b>personal feedback</b> to improve the
-  system.
-
-</p>
-
-<p>
-
-  To make sure we consider <b> a common way</b> interpretation we created
-  several <b>public polls</b>
-  we were collected and evaluated the general understanding.
-  This helped us to make our system <b>intuitive to understand</b>.
-
-</p>
-<h2>
-  Easy
-</h2>
-
-<p>
-
-  As mindset behind the system are several principles.
-  One of them is <b>“Easy to adopt and create”</b>, which means we want to
-  provide <b>a way for everybody</b> to
-  <b>read and create</b> marble diagrams.
-
-</p>
-
-<p>
-  To achieve this we create all diagrams in either googleSlides oder Powerpoint.
-  We believe this two options <b> enable</b> a big group of <b>people</b> to <b>edit
-  and draw </b> these diagrams.
-</p>
-
-<h2>
-  Detailed
-</h2>
+    <ul>
+        <li>
+            Consistent
+        </li>
+        <li>
+            Intuitive
+        </li>
+        <li>
+            Easy
+        </li>
+        <li>
+            Detailed
+        </li>
+        <li>
+            Customizable
+        </li>
+    </ul>
 
 
-<p>
-  Marble diagrams exist since a long time now.
-  As there was no well thought standard out there and not all edge cases
-  considered,
-  people started to create their own solutions to visualize processes.
-  These let to a variety of different ways of drawing these diagrams.
-  Some of the better approaches were able to visualize more complex prozesses,
-  but there is one essential thing which nobody considered yet,
-  but which is most critical to understand processes based on Rx. The internal
-  behavior of operators.
+</div>
 
-</p>
 
-<p>
-  This system is not only providing a consistent, standardized way of drawing
-  marble diagrams,
-  but also offers a way to visualize the internals of operators.
-  Of course based on the systems rules it selfe.
-</p>
+<div class="slide" id="slide4">
+    <h2>Consistency</h2>
 
+    <p>
+        There are several things to follow if you try to create a standard.
+        One of them is more <b>critical for a positive outcome </b>
+        than everything else, <b>consistency</b>.
+    </p>
+
+    <p>
+        By working with a <b>standardized, reproducible approach </b>
+        we managed to create <b> a consistent way </b> of drawing marble diagrams.
+        <b> A set of rules </b> developed over many many iterations, adopted and
+        simplified to serve as a guideline and blueprint for <b> creating and
+        using </b>
+        these diagrams.
+    </p>
+
+    <h2>Intuitive</h2>
+
+    <p>
+        As programming with Rx is hard we made sure to keep it intuitive.
+    </p>
+
+    <p>
+
+        By <b> including </b>a lot of <b>people</b> into the process of the creation
+        of this guide we collected a lot of <b>personal feedback</b> to improve the
+        system.
+
+    </p>
+
+    <p>
+
+        To make sure we consider <b> a common way</b> interpretation we created
+        several <b>public polls</b>
+        we were collected and evaluated the general understanding.
+        This helped us to make our system <b>intuitive to understand</b>.
+
+    </p>
+
+
+</div>
+<div class="slide" id="slide44">
+    <h2>
+        Easy
+    </h2>
+
+    <p>
+
+        As mindset behind the system are several principles.
+        One of them is <b>“Easy to adopt and create”</b>, which means we want to
+        provide <b>a way for everybody</b> to
+        <b>read and create</b> marble diagrams.
+
+    </p>
+
+    <p>
+        To achieve this we create all diagrams in either googleSlides oder Powerpoint.
+        We believe this two options <b> enable</b> a big group of <b>people</b> to <b>edit
+        and draw </b> these diagrams.
+    </p>
+
+    <h2>
+        Detailed
+    </h2>
+
+
+    <p>
+        Marble diagrams exist since a long time now.
+        As there was no well thought standard out there and not all edge cases
+        considered,
+        people started to create their own solutions to visualize processes.
+        These let to a variety of different ways of drawing these diagrams.
+        Some of the better approaches were able to visualize more complex prozesses,
+        but there is one essential thing which nobody considered yet,
+        but which is most critical to understand processes based on Rx. The internal
+        behavior of operators.
+
+    </p>
+
+    <p>
+        This system is not only providing a consistent, standardized way of drawing
+        marble diagrams,
+        but also offers a way to visualize the internals of operators.
+        Of course based on the systems rules it selfe.
+    </p>
+
+
+</div>
+
+<div class="slide" id="slide5">
+    <h2>
+        Technically Correct
+    </h2>
+    <p>
+        All diagrams should be able to mirror the source code as accurate as possible, therefore the
+    </p>
+</div>
+<div class="slide" id="slide6">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>
+                Index
+            </h1>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2> Design Tokens </h2>
+            <ul>
+                <li>
+                    Unit
+                </li>
+                <li>
+                    Color
+                </li>
+                <li>
+                    Shape
+                </li>
+                <li>
+                    Line
+                </li>
+                <li>
+                    Size
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2> Components </h2>
+            <ul>
+                <li>
+                    Time
+                </li>
+                <li>
+                    Time progress
+                </li>
+                <li>
+                    Moment in time
+                </li>
+                <li>
+                    Consumer Event
+                </li>
+                <li>
+                    Notification
+                </li>
+                <li>
+                    Complete
+                </li>
+                <li>
+                    Error
+                </li>
+                <li>
+                    Operator
+                </li>
+                <li>
+                    Operator Context
+                </li>
+                <li>
+                    Operation
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-md-4">
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="slide align-center" id="slide7">
+
+    <h1>
+        Design Tokens
+    </h1>
+</div>
+<div class="slide" id="slide8">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>
+                UNIT
+            </h2>
+
+            <img id="img1" src=assets/img/block-unit.png>
+            <img id="img2" src="assets/img/frame-block.png">
+            <img id="img3" src="assets/img/frame-block-block.png">
+
+        </div>
+        <div class="col-md-6">
+            <p>
+                The unit for width and height in marble diagrams is called a block.
+                A block is a rectangle with equal width and height.
+            </p>
+            <p>
+                Positioning of objects and text is also measured in blocks.
+            </p>
+            <p>
+                To have a convenient unit we use em with the base of 1 blok.
+            </p>
+            <p>
+                Sometimes time matters. The smallest unit of time is called frame.
+                A frame is a unit for time and expressed in width. 1 frame equals to the width of 2 blocks.
+            </p>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="slide">
+    <div class="row">
+        <div class="col-xs-12
+                col-md-4">
+            <img src="./assets/design-system/unit_block.JPG"
+                 alt="Unit Block" title="Unit Block">
+            <img src="./assets/design-system/unit_block-frame-timeline.JPG"
+                 alt="Frame Timeline" title="Frame Timeline">
+        </div>
+        <div class="col-xs-12
+                col-md-8">
+            <p>The unit for width and height in marble diagrams is called a block.
+                A block is a rectangle with equal width and height.
+
+                Positioning of objects and text is also measured in blocks.
+
+                To have a convenient unit we use em with the base of 1 blok.
+
+                Sometimes time matters. The smallest unit of time is called frame.
+                A frame is a unit for time and expressed in width. 1 frame equals to the width of 2 blocks.
+            </p>
+        </div>
+    </div>
+</div>
 
 <h1>
-  Design Tokens
+    FONT-FACE
 </h1>
 
 <div class="row">
-  <div class="col-xs-12
-              col-sm-8
-              col-md-6
-              col-lg-4">
-    <img src="./assets/design-system/unit_block.JPG"
-    alt="Unit Block" title="Unit Block">
-    <img src="./assets/design-system/unit_block-frame-timeline.JPG"
-      alt="Frame Timeline" title="Frame Timeline">
-  </div>
-  <div class="col-xs-12
-              col-md-6">
-    <p>The unit for width and height in marble diagrams is called a block.
-      A block is a rectangle with equal width and height.
+    <div class="col-xs-12 col-md-8">
 
-      Positioning of objects and text is also measured in blocks.
+        <div class="row">
+            <div class="col-xs-12 col-md-6 center-md">
+                <img src="./assets/design-system/font_font-face_sans-serif.JPG"
+                     alt="Unit Block">
+            </div>
+            <div class="col-xs-12 col-md-6 center-md">
 
-      To have a convenient unit we use em with the base of 1 blok.
+                <img src="./assets/design-system/font_font-face_serif.JPG"
+                     alt="Frame Timeline">
+            </div>
+        </div>
 
-      Sometimes time matters. The smallest unit of time is called frame.
-      A frame is a unit for time and expressed in width. 1 frame equals to the width of 2 blocks.
-    </p>
-  </div>
+        <img src="./assets/design-system/font_font-face_sans-serif.JPG"
+             alt="Unit Block" title="Unit Block">
+        <img src="./assets/design-system/font_font-face_serif.JPG"
+             alt="Frame Timeline">
+    </div>
+    <div class="col-xs-12 col-md-4">
+        The design guide doesn’t limit the choice of font.
+
+        Only a few limitations are suggested.
+
+        Serif font-face and mono-space letter.
+
+        Serif Font-Face
+        Serif font-face has compared to the serif font-faces less visual noise.
+
+        Mono-space
+        Mono-space font has to be used in the description of observables, operators or in the text of notifications.
+        This ensures that the with of text is directly proportional to the number of characters and therefore simplifies
+        the positioning and alignment of text in diagrams.
+
+    </div>
+
 </div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-9">
+        components here
+    </div>
+
+    <div class="col-xs-12 col-md-3">
+        logo
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-9">
+            Timeline
+            <div class="col-xs-12 col-md-9">
+                Notification
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-md-3">
+            Observable
+        </div>
+
+    </div>
+
+
+</div>
+
+
 </body>
 </html>

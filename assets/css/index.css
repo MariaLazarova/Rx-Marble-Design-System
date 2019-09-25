@@ -1,7 +1,54 @@
 .page {
   width: 1200px;
+  background-color: #e8e8e8;
+  font-family: monospace;
+
+
 }
 
 img {
   max-width: 100%;
 }
+
+
+
+
+
+.row {border: 1px solid #ff1d3c}
+div[class*='col-'] {border: 1px solid greenyellow}
+
+
+.slide {
+  width: 750px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  background-color: white;
+  height: 500px;
+
+}
+.align-center {
+  text-align: center;
+
+}
+
+
+
+p#quote {
+  text-align: end;
+  float: right;
+  margin-right: 5%;
+  font-size: 42pt;
+}
+
+
+
+
+
+/*
+To do:
+column
+remove align-center, use the class instead
+
+
+*/
